@@ -1,15 +1,15 @@
-from ..covid_data_handler import parse_csv_data
-from ..covid_data_handler import process_covid_csv_data
-from ..covid_data_handler import covid_API_request
-from ..covid_data_handler import schedule_covid_updates
-from ..covid_data_handler import process_covid_local_dict_data
-from ..covid_data_handler import process_covid_country_dict_data
-from ..covid_data_handler import get_updates
-from ..covid_data_handler import get_covid_data
-from ..covid_data_handler import remove_data_update
-from ..covid_data_handler import update_covid_data
-from ..covid_data_handler import schedule_check_data
-from ..covid_data_handler import set_repeating_data_update
+from covid_data_handler import parse_csv_data
+from covid_data_handler import process_covid_csv_data
+from covid_data_handler import covid_API_request
+from covid_data_handler import schedule_covid_updates
+from covid_data_handler import process_covid_local_dict_data
+from covid_data_handler import process_covid_country_dict_data
+from covid_data_handler import get_updates
+from covid_data_handler import get_covid_data
+from covid_data_handler import remove_data_update
+from covid_data_handler import update_covid_data
+from covid_data_handler import schedule_check_data
+from covid_data_handler import set_repeating_data_update
 
 def test_parse_csv_data():
     data = parse_csv_data('nation_2021-10-28.csv')

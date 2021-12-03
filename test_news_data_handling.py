@@ -1,12 +1,12 @@
-from ..covid_news_handling import news_API_request
-from ..covid_news_handling import update_news
-from ..covid_news_handling import remove_headline
-from ..covid_news_handling import schedule_news_update
-from ..covid_news_handling import get_updates
-from ..covid_news_handling import get_news
-from ..covid_news_handling import remove_news_update
-from ..covid_news_handling import schedule_check_news
-from ..covid_news_handling import set_repeating_news_update
+from covid_news_handling import news_API_request
+from covid_news_handling import update_news
+from covid_news_handling import remove_headline
+from covid_news_handling import schedule_news_update
+from covid_news_handling import get_updates
+from covid_news_handling import get_news
+from covid_news_handling import remove_news_update
+from covid_news_handling import schedule_check_news
+from covid_news_handling import set_repeating_news_update
 
 def test_news_API_request():
     assert news_API_request()

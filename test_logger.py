@@ -1,6 +1,6 @@
-from ..logger import log_infomation
-from ..logger import log_error
-from ..logger import log_warning
+from logger import log_infomation
+from logger import log_error
+from logger import log_warning
 
 def test_log_infomation():
     log_infomation('Test infomation')

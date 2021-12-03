@@ -1,6 +1,6 @@
 import time
-from ..shared_functions import time_format
-from ..shared_functions import remove_scheduled_update
+from shared_functions import time_format
+from shared_functions import remove_scheduled_update
 
 def test_remove_scheduled_update():
     formatted_time = time_format('12:00')
