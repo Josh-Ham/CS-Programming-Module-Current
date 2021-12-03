@@ -1,4 +1,4 @@
-# COVID-19 Dashboard f
+# COVID-19 Dashboard
 
 # Prerequisites or Instalation - either
 - uk_covid19 module
