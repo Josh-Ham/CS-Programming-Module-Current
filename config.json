@@ -1,0 +1,27 @@
+{
+    "api_key": "0ff0fffe820e4b12882b346245fa25fa",
+    "news_search_terms": "Covid COVID-19 coronavirus",
+    "location":"Exeter",
+    "location_type":"ltla",
+    "updates":[
+        {
+            "name":"example data",
+            "time":"01:00",
+            "type":"data",
+            "repeat":"False"
+        },
+        {
+            "name":"example news",
+            "time":"02:00",
+            "type":"news",
+            "repeat":"True"
+        },
+        {
+            "name":"example combination",
+            "time":"03:00",
+            "type":"both",
+            "repeat":"False"
+        }
+    ],
+    "web_title":"Covid-19 Dashboard"
+}
