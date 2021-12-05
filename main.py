@@ -181,7 +181,7 @@ def render_page() -> any:
     logger.log_infomation('Rednering page')
     return render_template(
         'index.html',
-        updates=updates,
+        updates=updates[:5],
         title=configerables['web_title'],
         location=covid_data['location'],
         local_7day_infections=covid_data['local_7day_infections'],

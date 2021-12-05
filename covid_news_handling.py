@@ -42,12 +42,12 @@ def news_API_request(
     Return values:
     news_articles -- list of the articles
     """
-    logger.log_infomation('Getting new news articles')
+    logger.log_infomation('Fetching new news articles')
 
     # Get covid news articles
     news_stories = newsapi.get_everything(
         q=covid_terms,
-        language='en'
+        language=configerables['language']
     )
 
     if not news_stories:
