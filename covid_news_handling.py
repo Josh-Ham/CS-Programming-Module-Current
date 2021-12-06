@@ -68,6 +68,7 @@ def update_news() -> None:
         temp_dictionary = {}
         temp_dictionary['title'] = article['title']
         temp_dictionary['content'] = article['content']
+        temp_dictionary['content'] += " see full story here: " + article['url']
 
         if (temp_dictionary not in headlines) and (
             temp_dictionary not in deleted_headlines

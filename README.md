@@ -94,4 +94,4 @@ Creates a locally hosted webpage containing COVID-19 data and news:
 ## Details
 - Made by Joshua Hammond
 - Shared under exclusive copyright law
-- Source can be found [here](https://github.com/Peter-Bread/CS-Programming-Module-Current)
+- Source code can be found [here](https://github.com/Peter-Bread/CS-Programming-Module-Current)

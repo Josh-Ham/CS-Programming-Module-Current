@@ -189,7 +189,7 @@ def render_page() -> any:
         national_7day_infections=covid_data['national_7day_infections'],
         hospital_cases='Hospital cases: '+str(covid_data['hospital_cases']),
         deaths_total='Total deaths: '+str(covid_data['deaths']),
-        news_articles=news_articles[:5]
+        news_articles=news_articles[:4]
         )
 
 if __name__ == '__main__':
