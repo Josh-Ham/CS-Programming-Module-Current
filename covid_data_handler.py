@@ -21,6 +21,7 @@ import json
 from uk_covid19 import Cov19API
 
 import logger
+
 from shared_functions import remove_scheduled_update, time_format
 
 # Load config file

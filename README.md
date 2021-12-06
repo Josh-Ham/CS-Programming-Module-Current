@@ -92,3 +92,6 @@ Creates a locally hosted webpage containing COVID-19 data and news:
         - the language of articles that should be fetched (see valid options [here](https://newsapi.org/sources))
 
 ## Details
+- Made by Joshua Hammond
+- Shared under exclusive copyright law
+- Source can be found [here](https://github.com/Peter-Bread/CS-Programming-Module-Current)
