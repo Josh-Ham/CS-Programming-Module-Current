@@ -1,0 +1,434 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>idk package &#8212; Covid-19 Dashboard 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/bizstyle.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tests package" href="tests.html" />
+    <link rel="prev" title="CS-Programming-Module-Current" href="modules.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tests.html" title="tests package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="CS-Programming-Module-Current"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Covid-19 Dashboard 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">CS-Programming-Module-Current</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">idk package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="idk-package">
+<h1>idk package<a class="headerlink" href="#idk-package" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-idk.covid_data_handler">
+<span id="idk-covid-data-handler-module"></span><h2>idk.covid_data_handler module<a class="headerlink" href="#module-idk.covid_data_handler" title="Permalink to this headline">¶</a></h2>
+<p>Covid data handling module.</p>
+<p>Fuctions:
+parse_csv_data – gets CSV data from file,
+process_covid_csv_data – gets specific data from the covid data,
+covid_API_request – makes a API request to Cov19API,
+schedule_covid_updates – schedules updates,
+update_covid_data – gets updated covid data,
+process_covid_local_dict_data – gets specific local covid data,
+process_covid_country_dict_data – gets specific national covid data,
+get_updates – gets uncompleted updates,
+schedule_check_data – runs scheduler,
+get_covid_data – gets formatted covid data,
+remove_data_update – removes future update,
+set_repeating_data_update – makes an update repeat</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_data_handler.covid_API_request">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_data_handler.</span></span><span class="sig-name descname"><span class="pre">covid_API_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'nope'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'no'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#idk.covid_data_handler.covid_API_request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get up-to-date Covid data as a dictionary.</p>
+<p>Optional arguements:
+location – location to get data from,
+location_type – type of location to get data from</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_data_handler.get_covid_data">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_data_handler.</span></span><span class="sig-name descname"><span class="pre">get_covid_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#idk.covid_data_handler.get_covid_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the covid data.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_data_handler.get_updates">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_data_handler.</span></span><span class="sig-name descname"><span class="pre">get_updates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#idk.covid_data_handler.get_updates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the list of updates.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_data_handler.parse_csv_data">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_data_handler.</span></span><span class="sig-name descname"><span class="pre">parse_csv_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">csv_filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#idk.covid_data_handler.parse_csv_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of strings for each line of the file.</p>
+<p>Keyword arguements:
+csv_filename – csv data filename</p>
+<p>Return values:
+csv_data – list of line of the csv file</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_data_handler.process_covid_country_dict_data">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_data_handler.</span></span><span class="sig-name descname"><span class="pre">process_covid_country_dict_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">covid_dict_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#idk.covid_data_handler.process_covid_country_dict_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the location, weekly infections, hospital cases and deaths.</p>
+<p>Keyword arguements:
+covid_dict_data – national covid data</p>
+<p>Return values:
+location – data location,
+national_7day_infections – last 7 day infections,
+hospital_cases – current hospital cases,
+deaths_total – current death toll</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_data_handler.process_covid_csv_data">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_data_handler.</span></span><span class="sig-name descname"><span class="pre">process_covid_csv_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">covid_csv_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#idk.covid_data_handler.process_covid_csv_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get cases, hospital cases and deaths from the Covid data.</p>
+<p>Keyword arguements:
+covid_csv_data – list of strings of lines from a csv file</p>
+<p>Return values:
+last7days_cases – number of covid cases in the last 7 days,
+current_hospital_cases – number of current hospital cases,
+total_deaths – total number of covid related deaths</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_data_handler.process_covid_local_dict_data">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_data_handler.</span></span><span class="sig-name descname"><span class="pre">process_covid_local_dict_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">covid_dict_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#idk.covid_data_handler.process_covid_local_dict_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the location and 7 day infections.</p>
+<p>Keyword arguements:
+covid_dict_data – local covid data</p>
+<p>Return values:
+location – data location,
+local_7day_infections – last 7 days infections</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_data_handler.remove_data_update">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_data_handler.</span></span><span class="sig-name descname"><span class="pre">remove_data_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#idk.covid_data_handler.remove_data_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove a data update from the list of updates.</p>
+<p>Keyword arguments:
+name – name of the update,</p>
+<p>Return values:
+removed – whether the update was removed or not,</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_data_handler.schedule_check_data">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_data_handler.</span></span><span class="sig-name descname"><span class="pre">schedule_check_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#idk.covid_data_handler.schedule_check_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs the schedular.</p>
+<p>Return values:
+done – completed update or False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_data_handler.schedule_covid_updates">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_data_handler.</span></span><span class="sig-name descname"><span class="pre">schedule_covid_updates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update_interval</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#idk.covid_data_handler.schedule_covid_updates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Schedule data updates using sched</p>
+<p>Keyword arguements:
+update_interval – time of day the update takes place,
+update_name – name of the update</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_data_handler.set_repeating_data_update">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_data_handler.</span></span><span class="sig-name descname"><span class="pre">set_repeating_data_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#idk.covid_data_handler.set_repeating_data_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a data update to be repeating.</p>
+<p>Keyword arguements:
+update_name – name of the update</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_data_handler.update_covid_data">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_data_handler.</span></span><span class="sig-name descname"><span class="pre">update_covid_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#idk.covid_data_handler.update_covid_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update the Covid-19 data.</p>
+</dd></dl>
+
+</section>
+<section id="module-idk.covid_news_handling">
+<span id="idk-covid-news-handling-module"></span><h2>idk.covid_news_handling module<a class="headerlink" href="#module-idk.covid_news_handling" title="Permalink to this headline">¶</a></h2>
+<p>Covid news handing module</p>
+<p>Functions:
+news_API_request – makes API request to News API,
+update_news – gets updated news headlines,
+remove_headline – removes news headline,
+schedule_news_update – schedules updates,
+get_updates – gets uncompleted updates,
+schedule_check_news – runs scheduler,
+get_news – gets formatted news data,
+remove_news_update – removes future news update,
+set_repeating_news_update – makes an update repeat</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_news_handling.get_news">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_news_handling.</span></span><span class="sig-name descname"><span class="pre">get_news</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#idk.covid_news_handling.get_news" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of headlines.</p>
+<p>Return values:
+headlines – list of current headlines</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_news_handling.get_updates">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_news_handling.</span></span><span class="sig-name descname"><span class="pre">get_updates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#idk.covid_news_handling.get_updates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the list of updates.</p>
+<p>Return values:
+updates – list of future updates</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_news_handling.news_API_request">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_news_handling.</span></span><span class="sig-name descname"><span class="pre">news_API_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">covid_terms</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'f'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#idk.covid_news_handling.news_API_request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get headlines about Covid in English.</p>
+<p>Optional arguements:
+covid_terms – search terms for the API request</p>
+<p>Return values:
+news_articles – list of the articles</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_news_handling.remove_headline">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_news_handling.</span></span><span class="sig-name descname"><span class="pre">remove_headline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">headline</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#idk.covid_news_handling.remove_headline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove the selected headline.</p>
+<p>Keyword arguements:
+headline – title of the headline to replace</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_news_handling.remove_news_update">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_news_handling.</span></span><span class="sig-name descname"><span class="pre">remove_news_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#idk.covid_news_handling.remove_news_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove a news update from list of updates.</p>
+<p>Keyword arguements:
+name – name of update</p>
+<p>Return values:
+removed – whether an update was removed</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_news_handling.schedule_check_news">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_news_handling.</span></span><span class="sig-name descname"><span class="pre">schedule_check_news</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#idk.covid_news_handling.schedule_check_news" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run the schedular.</p>
+<p>Return values:
+new – completed update or False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_news_handling.schedule_news_update">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_news_handling.</span></span><span class="sig-name descname"><span class="pre">schedule_news_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update_interval</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#idk.covid_news_handling.schedule_news_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Schedule news updates using sched.</p>
+<p>Keyword arguements:
+update_interval – time of day update takes place,
+update_name – name of the update</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_news_handling.set_repeating_news_update">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_news_handling.</span></span><span class="sig-name descname"><span class="pre">set_repeating_news_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#idk.covid_news_handling.set_repeating_news_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a news update to be repeating.</p>
+<p>Keyword arguements:
+update_name – name of the update</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.covid_news_handling.update_news">
+<span class="sig-prename descclassname"><span class="pre">idk.covid_news_handling.</span></span><span class="sig-name descname"><span class="pre">update_news</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#idk.covid_news_handling.update_news" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update the covid news headlines.</p>
+</dd></dl>
+
+</section>
+<section id="module-idk.logger">
+<span id="idk-logger-module"></span><h2>idk.logger module<a class="headerlink" href="#module-idk.logger" title="Permalink to this headline">¶</a></h2>
+<p>Logger module</p>
+<p>Functions:
+log_infomation – logs infomation,
+log_warning – logs a warning,
+log_error – logs an error</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.logger.log_error">
+<span class="sig-prename descclassname"><span class="pre">idk.logger.</span></span><span class="sig-name descname"><span class="pre">log_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#idk.logger.log_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Log error to the log file.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.logger.log_infomation">
+<span class="sig-prename descclassname"><span class="pre">idk.logger.</span></span><span class="sig-name descname"><span class="pre">log_infomation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infomation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#idk.logger.log_infomation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Log infomation to log file.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.logger.log_warning">
+<span class="sig-prename descclassname"><span class="pre">idk.logger.</span></span><span class="sig-name descname"><span class="pre">log_warning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#idk.logger.log_warning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Log warning to the log file.</p>
+</dd></dl>
+
+</section>
+<section id="module-idk.main">
+<span id="idk-main-module"></span><h2>idk.main module<a class="headerlink" href="#module-idk.main" title="Permalink to this headline">¶</a></h2>
+<p>Main webpage module</p>
+<p>Functions:
+process_requests – processes user inputs,
+render_page – renders up-to-date page</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.main.process_requests">
+<span class="sig-prename descclassname"><span class="pre">idk.main.</span></span><span class="sig-name descname"><span class="pre">process_requests</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">requests</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_updates</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">news_updates</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#idk.main.process_requests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process user inputs.</p>
+<p>Keyword arguements:
+requests – flask request,
+data_updates – list of data updates,
+news_updates – list of news updates</p>
+<p>Return values:
+data_updates – list of data updates,
+news_updates – list of news updates</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.main.render_page">
+<span class="sig-prename descclassname"><span class="pre">idk.main.</span></span><span class="sig-name descname"><span class="pre">render_page</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">any</span></span></span><a class="headerlink" href="#idk.main.render_page" title="Permalink to this definition">¶</a></dt>
+<dd><p>Render the page.</p>
+<p>Return values:
+render_template – render the html onto the webpage</p>
+</dd></dl>
+
+</section>
+<section id="module-idk.shared_functions">
+<span id="idk-shared-functions-module"></span><h2>idk.shared_functions module<a class="headerlink" href="#module-idk.shared_functions" title="Permalink to this headline">¶</a></h2>
+<p>Common functions betwee data and news handling modules</p>
+<p>Functions
+remove_scheduled_update – removes future update,
+time_format – formats time</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.shared_functions.remove_scheduled_update">
+<span class="sig-prename descclassname"><span class="pre">idk.shared_functions.</span></span><span class="sig-name descname"><span class="pre">remove_scheduled_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">updates</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#idk.shared_functions.remove_scheduled_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancel scheduled updates.</p>
+<p>Keyword arguements:
+update_name – name of the update,
+updates – list of updates</p>
+<p>Return values:
+updates – list of updates,
+removed – whether an updates was removed of not</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="idk.shared_functions.time_format">
+<span class="sig-prename descclassname"><span class="pre">idk.shared_functions.</span></span><span class="sig-name descname"><span class="pre">time_format</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time_of_day</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span></span></span><a class="headerlink" href="#idk.shared_functions.time_format" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the format of the time for use with the time module</p>
+<p>Keyword arguements:
+time_of_day – time in format “HH:MM”</p>
+<p>Return values:
+formatted_time – time in format required for the time module</p>
+</dd></dl>
+
+</section>
+<section id="module-idk">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-idk" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">idk package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-idk.covid_data_handler">idk.covid_data_handler module</a></li>
+<li><a class="reference internal" href="#module-idk.covid_news_handling">idk.covid_news_handling module</a></li>
+<li><a class="reference internal" href="#module-idk.logger">idk.logger module</a></li>
+<li><a class="reference internal" href="#module-idk.main">idk.main module</a></li>
+<li><a class="reference internal" href="#module-idk.shared_functions">idk.shared_functions module</a></li>
+<li><a class="reference internal" href="#module-idk">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="modules.html"
+                        title="previous chapter">CS-Programming-Module-Current</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="tests.html"
+                        title="next chapter">tests package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/idk.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tests.html" title="tests package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="CS-Programming-Module-Current"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Covid-19 Dashboard 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >CS-Programming-Module-Current</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">idk package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Joshua Hammond.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.1.
+    </div>
+  </body>
+</html>

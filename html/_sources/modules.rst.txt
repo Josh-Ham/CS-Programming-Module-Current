@@ -1,0 +1,8 @@
+CS-Programming-Module-Current
+=============================
+
+.. toctree::
+   :maxdepth: 4
+
+   idk
+   tests

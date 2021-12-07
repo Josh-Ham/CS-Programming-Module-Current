@@ -1,0 +1,61 @@
+CS\-Programming\-Module\-Current package
+========================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   CS-Programming-Module-Current.tests
+
+Submodules
+----------
+
+CS\-Programming\-Module\-Current.covid\_data\_handler module
+------------------------------------------------------------
+
+.. automodule:: CS-Programming-Module-Current.covid_data_handler
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+CS\-Programming\-Module\-Current.covid\_news\_handling module
+-------------------------------------------------------------
+
+.. automodule:: CS-Programming-Module-Current.covid_news_handling
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+CS\-Programming\-Module\-Current.logger module
+----------------------------------------------
+
+.. automodule:: CS-Programming-Module-Current.logger
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+CS\-Programming\-Module\-Current.main module
+--------------------------------------------
+
+.. automodule:: CS-Programming-Module-Current.main
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+CS\-Programming\-Module\-Current.shared\_functions module
+---------------------------------------------------------
+
+.. automodule:: CS-Programming-Module-Current.shared_functions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: CS-Programming-Module-Current
+   :members:
+   :undoc-members:
+   :show-inheritance:

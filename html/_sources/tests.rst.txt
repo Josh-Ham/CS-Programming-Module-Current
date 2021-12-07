@@ -1,0 +1,45 @@
+tests package
+=============
+
+Submodules
+----------
+
+tests.test\_covid\_data\_handler module
+---------------------------------------
+
+.. automodule:: tests.test_covid_data_handler
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.test\_logger module
+-------------------------
+
+.. automodule:: tests.test_logger
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.test\_news\_data\_handling module
+---------------------------------------
+
+.. automodule:: tests.test_news_data_handling
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.test\_shared\_functions module
+------------------------------------
+
+.. automodule:: tests.test_shared_functions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: tests
+   :members:
+   :undoc-members:
+   :show-inheritance:

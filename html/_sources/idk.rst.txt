@@ -1,0 +1,53 @@
+idk package
+===========
+
+Submodules
+----------
+
+idk.covid\_data\_handler module
+-------------------------------
+
+.. automodule:: idk.covid_data_handler
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+idk.covid\_news\_handling module
+--------------------------------
+
+.. automodule:: idk.covid_news_handling
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+idk.logger module
+-----------------
+
+.. automodule:: idk.logger
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+idk.main module
+---------------
+
+.. automodule:: idk.main
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+idk.shared\_functions module
+----------------------------
+
+.. automodule:: idk.shared_functions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: idk
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,45 @@
+CS\-Programming\-Module\-Current.tests package
+==============================================
+
+Submodules
+----------
+
+CS\-Programming\-Module\-Current.tests.test\_covid\_data\_handler module
+------------------------------------------------------------------------
+
+.. automodule:: CS-Programming-Module-Current.tests.test_covid_data_handler
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+CS\-Programming\-Module\-Current.tests.test\_logger module
+----------------------------------------------------------
+
+.. automodule:: CS-Programming-Module-Current.tests.test_logger
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+CS\-Programming\-Module\-Current.tests.test\_news\_data\_handling module
+------------------------------------------------------------------------
+
+.. automodule:: CS-Programming-Module-Current.tests.test_news_data_handling
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+CS\-Programming\-Module\-Current.tests.test\_shared\_functions module
+---------------------------------------------------------------------
+
+.. automodule:: CS-Programming-Module-Current.tests.test_shared_functions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: CS-Programming-Module-Current.tests
+   :members:
+   :undoc-members:
+   :show-inheritance:
