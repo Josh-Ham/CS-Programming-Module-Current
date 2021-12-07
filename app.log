@@ -33,22 +33,49 @@ root - INFO - Running news schedular
 root - INFO - Getting updates
 root - INFO - Configuring updates
 root - INFO - Rednering page
-werkzeug - INFO - 127.0.0.1 - - [06/Dec/2021 12:30:24] "GET / HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [06/Dec/2021 12:30:24] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
-werkzeug - INFO - 127.0.0.1 - - [06/Dec/2021 12:30:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [07/Dec/2021 15:54:58] "GET / HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [07/Dec/2021 15:54:58] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
 root - INFO - Scheduler running
 root - INFO - Data schedular running
 root - INFO - Running news schedular
 root - INFO - Getting updates
+root - INFO - Update removal request
+root - INFO - Removing data update
+root - INFO - Removing scheduled update example combination
+root - INFO - Remving news update
+root - INFO - Removing scheduled update example combination
 root - INFO - Configuring updates
 root - INFO - Rednering page
-werkzeug - INFO - 127.0.0.1 - - [06/Dec/2021 12:31:25] "GET /index HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [06/Dec/2021 12:31:25] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [07/Dec/2021 15:55:00] "GET /index?update_item=example+combination HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [07/Dec/2021 15:55:00] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
 root - INFO - Scheduler running
 root - INFO - Data schedular running
 root - INFO - Running news schedular
 root - INFO - Getting updates
+root - INFO - Headline removal request
+root - INFO - Remvoing headline
 root - INFO - Configuring updates
 root - INFO - Rednering page
-werkzeug - INFO - 127.0.0.1 - - [06/Dec/2021 12:32:25] "GET /index HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [06/Dec/2021 12:32:25] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [07/Dec/2021 15:55:02] "GET /index?notif=Covid-19+Boosters+for+All+Are+On+the+Way HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [07/Dec/2021 15:55:02] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+root - INFO - Scheduler running
+root - INFO - Data schedular running
+root - INFO - Running news schedular
+root - INFO - Getting updates
+root - INFO - Headline removal request
+root - INFO - Remvoing headline
+root - INFO - Configuring updates
+root - INFO - Rednering page
+werkzeug - INFO - 127.0.0.1 - - [07/Dec/2021 15:55:03] "GET /index?notif=Omicron+is+Here.+Will+We+Use+Our+New+Covid+Drugs+Wisely%3F HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [07/Dec/2021 15:55:03] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+root - INFO - Scheduler running
+root - INFO - Data schedular running
+root - INFO - Running news schedular
+root - INFO - Getting updates
+root - INFO - New update request
+root - INFO - Scheduling new news update
+root - INFO - Formatting time
+root - INFO - Configuring updates
+root - INFO - Rednering page
+werkzeug - INFO - 127.0.0.1 - - [07/Dec/2021 15:55:11] "GET /index?update=11%3A11&two=effaef&news=news HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [07/Dec/2021 15:55:11] "[33mGET /static/images/ HTTP/1.1[0m" 404 -

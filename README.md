@@ -23,6 +23,7 @@ Creates a locally hosted webpage containing COVID-19 data and news:
 - Python json module
 - Python logging module
 - Python flask module
+- Python markupsafe module
 - uk_covid19 module (infomation [here](https://publichealthengland.github.io/coronavirus-dashboard-api-python-sdk/pages/getting_started.html))
 - newsapi module (infomation [here](https://newsapi.org/))
 
