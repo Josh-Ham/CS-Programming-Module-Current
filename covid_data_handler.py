@@ -1,18 +1,18 @@
 """Covid data handling module.
 
 Fuctions:
-parse_csv_data -- gets CSV data from file
-process_covid_csv_data -- gets specific data from the covid data
-covid_API_request -- makes a API request to Cov19API
-schedule_covid_updates -- schedules updates
-update_covid_data -- gets updated covid data
-process_covid_local_dict_data -- gets specific local covid data
-process_covid_country_dict_data -- gets specific national covid data
-get_updates -- gets uncompleted updates
-schedule_check_data -- runs scheduler
-get_covid_data -- gets formatted covid data
-remove_data_update -- removes future update
-set_repeating_data_update -- makes an update repeat
+    parse_csv_data -- gets CSV data from file
+    process_covid_csv_data -- gets specific data from the covid data
+    covid_API_request -- makes a API request to Cov19API
+    schedule_covid_updates -- schedules updates
+    update_covid_data -- gets updated covid data
+    process_covid_local_dict_data -- gets specific local covid data
+    process_covid_country_dict_data -- gets specific national covid data
+    get_updates -- gets uncompleted updates
+    schedule_check_data -- runs scheduler
+    get_covid_data -- gets formatted covid data
+    remove_data_update -- removes future update
+    set_repeating_data_update -- makes an update repeat
 """
 import time
 import sched
@@ -37,10 +37,10 @@ def parse_csv_data(csv_filename: str) -> list:
     """Get a list of strings for each line of the file.
 
     Keyword arguements:
-    csv_filename -- csv data filename
+        csv_filename -- csv data filename
 
     Return values:
-    csv_data -- list of line of the csv file
+        csv_data -- list of line of the csv file
     """
     with open(csv_filename, encoding='utf8') as csv_file:
         csv_data = csv_file.readlines()
@@ -52,12 +52,12 @@ def process_covid_csv_data(
     """Get cases, hospital cases and deaths from the Covid data.
 
     Keyword arguements:
-    covid_csv_data -- list of strings of lines from a csv file
+        covid_csv_data -- list of strings of lines from a csv file
 
     Return values:
-    last7days_cases -- number of covid cases in the last 7 days,
-    current_hospital_cases -- number of current hospital cases,
-    total_deaths -- total number of covid related deaths
+        last7days_cases -- number of covid cases in the last 7 days,
+        current_hospital_cases -- number of current hospital cases,
+        total_deaths -- total number of covid related deaths
     """
     # Calculate the last 7 day cases
     last7days_cases = 0
@@ -95,8 +95,8 @@ def covid_API_request(
     """Get up-to-date Covid data as a dictionary.
 
     Optional arguements:
-    location -- location to get data from,
-    location_type -- type of location to get data from
+        location -- location to get data from,
+        location_type -- type of location to get data from
     """
     # Set up search terms
     filters = ['areaType='+location_type, 'areaName='+location]
@@ -127,8 +127,8 @@ def schedule_covid_updates(
     """Schedule data updates using sched
 
     Keyword arguements:
-    update_interval -- time of day the update takes place
-    update_name -- name of the update
+        update_interval -- time of day the update takes place
+        update_name -- name of the update
     """
     global updates
 
@@ -194,11 +194,11 @@ def process_covid_local_dict_data(
     """Gets the location and 7 day infections.
 
     Keyword arguements:
-    covid_dict_data -- local covid data
+        covid_dict_data -- local covid data
 
     Return values:
-    location -- data location,
-    local_7day_infections -- last 7 days infections
+        location -- data location,
+        local_7day_infections -- last 7 days infections
     """
     # Get data and location (from the data)
     logger.log_infomation('Processing local covid data')
@@ -227,13 +227,13 @@ def process_covid_country_dict_data(
     """Get the location, weekly infections, hospital cases and deaths.
 
     Keyword arguements:
-    covid_dict_data -- national covid data
+        covid_dict_data -- national covid data
 
     Return values:
-    location -- data location
-    national_7day_infections -- last 7 day infections
-    hospital_cases -- current hospital cases
-    deaths_total -- current death toll
+        location -- data location
+        national_7day_infections -- last 7 day infections
+        hospital_cases -- current hospital cases
+        deaths_total -- current death toll
     """
     # Get data and location (from the data)
     logger.log_infomation('Processing national covid data')
@@ -279,7 +279,7 @@ def schedule_check_data() -> dict or bool:
     """Runs the schedular.
 
     Return values:
-    done -- completed update or False
+        done -- completed update or False
     """
     # Run schedular
     logger.log_infomation('Data schedular running')
@@ -302,10 +302,10 @@ def remove_data_update(name: str) -> bool:
     """Remove a data update from the list of updates.
 
     Keyword arguments:
-    name -- name of the update
+        name -- name of the update
 
     Return values:
-    removed -- whether the update was removed or not
+        removed -- whether the update was removed or not
     """
     logger.log_infomation('Removing data update')
 
@@ -318,7 +318,7 @@ def set_repeating_data_update(update_name: str) -> None:
     """Set a data update to be repeating.
 
     Keyword arguements:
-    update_name -- name of the update
+        update_name -- name of the update
     """
     logger.log_infomation('Set update to be repeating')
 

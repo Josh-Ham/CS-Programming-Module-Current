@@ -1,9 +1,9 @@
 """Logger module
 
 Functions:
-log_infomation -- logs infomation
-log_warning -- logs a warning
-log_error -- logs an error
+    log_infomation -- logs infomation
+    log_warning -- logs a warning
+    log_error -- logs an error
 """
 import logging
 

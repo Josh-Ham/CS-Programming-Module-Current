@@ -1,8 +1,8 @@
 """Main webpage module
 
 Functions:
-process_requests -- processes user inputs
-render_page -- renders up-to-date page
+    process_requests -- processes user inputs
+    render_page -- renders up-to-date page
 """
 import json
 from flask import Flask, render_template, request
@@ -56,13 +56,13 @@ def process_requests(
     """Process user inputs.
 
     Keyword arguements:
-    requests -- flask request,
-    data_updates -- list of data updates,
-    news_updates -- list of news updates
+        requests -- flask request,
+        data_updates -- list of data updates,
+        news_updates -- list of news updates
 
     Return values:
-    data_updates -- list of data updates,
-    news_updates -- list of news updates
+        data_updates -- list of data updates,
+        news_updates -- list of news updates
     """
     global news_articles
 
@@ -115,7 +115,7 @@ def render_page() -> any:
     """Render the page.
 
     Return values:
-    render_template -- render the html onto the webpage
+        render_template -- render the html onto the webpage
     """
     global covid_data, news_articles
 

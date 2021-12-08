@@ -1,15 +1,15 @@
 """Covid news handing module
 
 Functions:
-news_API_request -- makes API request to News API
-update_news -- gets updated news headlines
-remove_headline -- removes news headline
-schedule_news_update -- schedules updates
-get_updates -- gets uncompleted updates
-schedule_check_news -- runs scheduler
-get_news -- gets formatted news data
-remove_news_update -- removes future news update
-set_repeating_news_update -- makes an update repeat
+    news_API_request -- makes API request to News API
+    update_news -- gets updated news headlines
+    remove_headline -- removes news headline
+    schedule_news_update -- schedules updates
+    get_updates -- gets uncompleted updates
+    schedule_check_news -- runs scheduler
+    get_news -- gets formatted news data
+    remove_news_update -- removes future news update
+    set_repeating_news_update -- makes an update repeat
 """
 import json
 import sched
@@ -37,10 +37,10 @@ def news_API_request(
     """Get headlines about Covid in English.
 
     Optional arguements:
-    covid_terms -- search terms for the API request
+        covid_terms -- search terms for the API request
 
     Return values:
-    news_articles -- list of the articles
+        news_articles -- list of the articles
     """
     logger.log_infomation('Fetching new news articles')
 
@@ -81,7 +81,7 @@ def remove_headline(headline: str) -> None:
     """Remove the selected headline.
 
     Keyword arguements:
-    headline -- title of the headline to replace
+        headline -- title of the headline to replace
     """
     logger.log_infomation('Remvoing headline')
     # Get the whole headline from the title
@@ -101,8 +101,8 @@ def schedule_news_update(
     """Schedule news updates using sched.
 
     Keyword arguements:
-    update_interval -- time of day update takes place,
-    update_name -- name of the update
+        update_interval -- time of day update takes place,
+        update_name -- name of the update
     """
     global updates
     logger.log_infomation('Scheduling new news update')
@@ -141,7 +141,7 @@ def get_updates() -> list:
     """Get the list of updates.
 
     Return values:
-    updates -- list of future updates
+        updates -- list of future updates
     """
     return updates
 
@@ -149,7 +149,7 @@ def schedule_check_news() -> dict or bool:
     """Run the schedular.
 
     Return values:
-    new -- completed update or False
+        new -- completed update or False
     """
     # Run the schedular
     logger.log_infomation('Running news schedular')
@@ -167,7 +167,7 @@ def get_news() -> list:
     """Return a list of headlines.
 
     Return values:
-    headlines -- list of current headlines
+        headlines -- list of current headlines
     """
     return headlines
 
@@ -175,10 +175,10 @@ def remove_news_update(name: str) -> bool:
     """Remove a news update from list of updates.
 
     Keyword arguements:
-    name -- name of update
+        name -- name of update
 
     Return values:
-    removed -- whether an update was removed
+        removed -- whether an update was removed
     """
     logger.log_infomation('Remving news update')
 
@@ -191,7 +191,7 @@ def set_repeating_news_update(update_name: str) -> None:
     """Set a news update to be repeating.
 
     Keyword arguements:
-    update_name -- name of the update
+        update_name -- name of the update
     """
     logger.log_infomation('Setting repeating news update')
 

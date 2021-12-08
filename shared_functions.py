@@ -1,8 +1,8 @@
 """Common functions betwee data and news handling modules
 
 Functions
-remove_scheduled_update -- removes future update
-time_format -- formats time
+    remove_scheduled_update -- removes future update
+    time_format -- formats time
 """
 import time
 
@@ -12,12 +12,12 @@ def remove_scheduled_update(update_name: str, updates: list) -> tuple[list, bool
     """Cancel scheduled updates.
 
     Keyword arguements:
-    update_name -- name of the update,
-    updates -- list of updates
+        update_name -- name of the update,
+        updates -- list of updates
 
     Return values:
-    updates -- list of updates,
-    removed -- whether an updates was removed of not
+        updates -- list of updates,
+        removed -- whether an updates was removed of not
     """
     log_infomation('Removing scheduled update '+update_name)
     removed = False
@@ -36,10 +36,10 @@ def time_format(time_of_day: str) -> tuple:
     """Convert the format of the time for use with the time module
 
     Keyword arguements:
-    time_of_day -- time in format "HH:MM"
+        time_of_day -- time in format "HH:MM"
 
     Return values:
-    formatted_time -- time in format required for the time module
+        formatted_time -- time in format required for the time module
     """
     # Get current infomation
     log_infomation('Formatting time')
