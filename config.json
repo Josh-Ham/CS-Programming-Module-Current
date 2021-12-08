@@ -24,5 +24,6 @@
         }
     ],
     "web_title":"Covid-19 Dashboard",
-    "language":"en"
+    "language":"en",
+    "image_path":"death_and_destruction.png"
 }

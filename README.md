@@ -36,7 +36,7 @@ Creates a locally hosted webpage containing COVID-19 data and news:
     - There will be no visual confirmation that it is running successfully
 - In a web browser go to http://127.0.0.1:5000/
 - ### Adding update
-    ![Screenshot of bottom middle part of webpage](screenshots/add_update.png)
+    ![Screenshot of bottom middle part of webpage](static/images/add_update.png)
     - Add the time of the update to the top input box (where it says '12:30')
     - Add the name of the update to the second input box (where it says 'Update label')
     - If you want the update to happen every 24-hour, check the 'Repeat update' box; if it is a one-off, leave it unchecked
@@ -46,11 +46,11 @@ Creates a locally hosted webpage containing COVID-19 data and news:
         - New updates can't be set for the same time as scheduled updates
     - Press the 'Submit' button to create your new update (as the number of visible updates is limited to the next 5, you may not see the update appear instantly)
 - ### Remove update
-    ![Screenshot of top left part of webpage](screenshots/remove_update.png)
+    ![Screenshot of top left part of webpage](static/images/remove_update.png)
     - Click on the cross on the top right of an update to remove it
         - If you have a news and data update, like 'example combiation', there is no way to remove just the data or news update
 - ### Remove news article
-    ![Screenshot of top left part of webpage](screenshots/remove_news.png)
+    ![Screenshot of top left part of webpage](static/images/remove_news.png)
     - Click on the cross on the top right of a news article to remove it
 
 ## Testing
@@ -94,5 +94,5 @@ Creates a locally hosted webpage containing COVID-19 data and news:
 
 ## Details
 - Made by Joshua Hammond
-- Shared under exclusive copyright law
+- Shared under MIT (see [LISENSE](LICENSE))
 - Source code can be found [here](https://github.com/Peter-Bread/CS-Programming-Module-Current)

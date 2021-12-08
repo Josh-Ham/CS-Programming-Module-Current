@@ -198,7 +198,9 @@ def render_page() -> any:
         national_7day_infections=covid_data['national_7day_infections'],
         hospital_cases='Hospital cases: '+str(covid_data['hospital_cases']),
         deaths_total='Total deaths: '+str(covid_data['deaths']),
-        news_articles=news_articles[:4]
+        news_articles=news_articles[:4],
+        image=configerables['image_path'],
+        favicon='static/images/'+configerables['image_path']
         )
 
 if __name__ == '__main__':
