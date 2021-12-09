@@ -151,7 +151,7 @@ def render_page() -> any:
             news_updates = covid_news_handling.get_updates()
         news_articles = covid_news_handling.get_news()
 
-    # Respond to user 
+    # Respond to user
     data_updates, news_updates = process_requests(
         request,
         data_updates,

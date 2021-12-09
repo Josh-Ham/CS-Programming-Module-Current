@@ -28,11 +28,12 @@ Creates a locally hosted webpage containing COVID-19 data and news:
 - newsapi module (infomation [here](https://newsapi.org/))
 
 ## Instalation
-- `pip install x`
+- `pip install covid-19-dashboard-pkg-jwh220`
+- [pypi page](https://pypi.org/project/covid-19-dashboard-pkg-jwh220/)
 
 ## Getting Started
 - In the file 'config.json', add your [API key](https://newsapi.org/) where it says "**news API key here**"
-- Run the main file
+- Run the package
     - There will be no visual confirmation that it is running successfully
 - In a web browser go to http://127.0.0.1:5000/
 - ### Adding update

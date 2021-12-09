@@ -33,15 +33,48 @@ root - INFO - Running news schedular
 root - INFO - Getting updates
 root - INFO - Configuring updates
 root - INFO - Rednering page
-werkzeug - INFO - 127.0.0.1 - - [08/Dec/2021 15:03:26] "GET / HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [08/Dec/2021 15:03:26] "GET /static/images/death_and_destruction.png HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [08/Dec/2021 15:03:27] "[36mGET /static/images/death_and_destruction.png HTTP/1.1[0m" 304 -
+werkzeug - INFO - 127.0.0.1 - - [09/Dec/2021 09:27:51] "GET / HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [09/Dec/2021 09:27:52] "GET /static/images/death_and_destruction.png HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [09/Dec/2021 09:27:53] "[36mGET /static/images/death_and_destruction.png HTTP/1.1[0m" 304 -
 root - INFO - Scheduler running
 root - INFO - Data schedular running
 root - INFO - Running news schedular
 root - INFO - Getting updates
+root - INFO - New update request
+root - INFO - Formatting time
+root - INFO - Creating data update
+root - INFO - Set update to be repeating
+root - WARNING - No update type selected
 root - INFO - Configuring updates
 root - INFO - Rednering page
-werkzeug - INFO - 127.0.0.1 - - [08/Dec/2021 15:04:27] "GET /index HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [08/Dec/2021 15:04:27] "[36mGET /static/images/death_and_destruction.png HTTP/1.1[0m" 304 -
-werkzeug - INFO - 127.0.0.1 - - [08/Dec/2021 15:04:27] "[36mGET /static/images/death_and_destruction.png HTTP/1.1[0m" 304 -
+werkzeug - INFO - 127.0.0.1 - - [09/Dec/2021 09:28:31] "GET /index?update=09%3A29&two=testing+123&repeat=repeat&covid-data=covid-data HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [09/Dec/2021 09:28:31] "[36mGET /static/images/death_and_destruction.png HTTP/1.1[0m" 304 -
+werkzeug - INFO - 127.0.0.1 - - [09/Dec/2021 09:28:31] "[36mGET /static/images/death_and_destruction.png HTTP/1.1[0m" 304 -
+root - INFO - Scheduler running
+root - INFO - Data schedular running
+root - INFO - Updating covid data
+root - INFO - Getting covid data
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+urllib3.connectionpool - DEBUG - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22areaCode%22%3A%22areaCode%22%2C%22areaName%22%3A%22areaName%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+urllib3.connectionpool - DEBUG - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22areaCode%22%3A%22areaCode%22%2C%22areaName%22%3A%22areaName%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+root - INFO - Processing local covid data
+root - INFO - Getting covid data
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+urllib3.connectionpool - DEBUG - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22areaCode%22%3A%22areaCode%22%2C%22areaName%22%3A%22areaName%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+urllib3.connectionpool - DEBUG - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22areaCode%22%3A%22areaCode%22%2C%22areaName%22%3A%22areaName%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+root - INFO - Processing national covid data
+root - INFO - Running news schedular
+root - INFO - Getting updates
+root - INFO - New covid data in main
+root - INFO - Formatting time
+root - INFO - Creating data update
+root - INFO - Set update to be repeating
+root - INFO - Headline removal request
+root - INFO - Remvoing headline
+root - INFO - Configuring updates
+root - INFO - Rednering page
+werkzeug - INFO - 127.0.0.1 - - [09/Dec/2021 09:29:14] "GET /index?notif=Mounting+evidence+highlights+the+importance+of+Covid-19+boosters HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [09/Dec/2021 09:29:14] "[36mGET /static/images/death_and_destruction.png HTTP/1.1[0m" 304 -
+werkzeug - INFO - 127.0.0.1 - - [09/Dec/2021 09:29:14] "[36mGET /static/images/death_and_destruction.png HTTP/1.1[0m" 304 -
