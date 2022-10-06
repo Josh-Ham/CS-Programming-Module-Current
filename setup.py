@@ -9,7 +9,7 @@ setuptools.setup(
     description="Covid-19 online dashboard.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Peter-Bread/CS-Programming-Module-Current",
+    url="https://github.com/Josh-Ham/CS-Programming-Module-Current",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
